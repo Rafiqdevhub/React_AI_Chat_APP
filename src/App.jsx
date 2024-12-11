@@ -42,7 +42,6 @@ const App = () => {
           contents: [{ parts: [{ text: question }] }],
         },
       });
-      // console.log(response);
 
       const aiResponse =
         response["data"]["candidates"][0]["content"]["parts"][0]["text"];
@@ -61,7 +60,6 @@ const App = () => {
   return (
     <div className="fixed inset-0 bg-gradient-to-r from-blue-50 to-blue-100">
       <div className="h-full max-w-4xl mx-auto flex flex-col p-3">
-        {/* Fixed Header */}
         <header className="text-center py-4">
           <h1 className="text-4xl font-bold text-blue-500 hover:text-blue-600 transition-colors">
             Chat AI 🤖
